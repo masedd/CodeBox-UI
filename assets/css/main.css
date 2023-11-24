@@ -1,0 +1,1543 @@
+        /* Fonts */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            outline: none !important;
+        }
+        
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+        /* ====================
+Global CSS
+==================== */
+        
+         :root {
+            --primary-color: #4C65EA;
+            --black-color-1: #0E0E0E;
+            --black-color-2: #575454;
+            --white-color: #FFFFFF;
+            --dongker-color: #1B2A4E;
+            --background-color: #FCFCFF;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color) !important;
+            border-radius: 6px;
+            padding: 10px 20px;
+            border: none;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 27px;
+            color: var(--white-color);
+            letter-spacing: 0.01em;
+            box-shadow: none !important;
+        }
+        
+        .btn-primary:focus {
+            background: var(--primary-color) !important;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-color) !important;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        body {
+            background-color: var(--background-color);
+        }
+        /* ====================
+Navbar CSS
+==================== */
+        
+        .bg-light {
+            background-color: var(--background-color) !important;
+        }
+        
+        .nav-link {
+            font-size: 15px;
+            line-height: 27px;
+            letter-spacing: 0.01em;
+            color: var(--black-color-2);
+            margin: 0px 14px;
+        }
+        
+        .nav-link.active {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 27px;
+            letter-spacing: 0.01em;
+            color: var(--primary-color) !important;
+        }
+        /* ====================
+Hero Section CSS
+==================== */
+        
+        section.hero {
+            background-image: url(../img/background/hero-bg.png);
+            height: 100vh;
+            background-repeat: no-repeat;
+        }
+        
+        .hero .container .content {
+            margin-top: 157px;
+        }
+        
+        .hero .container .content h4 {
+            font-size: 24px;
+            line-height: 27px;
+            letter-spacing: 0.01em;
+            color: var(--primary-color);
+            margin-bottom: 24px;
+        }
+        
+        .hero .container .content h1 {
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 90px;
+            color: var(--black-color-1);
+            margin-bottom: 34px;
+        }
+        /* ====================
+Service Section CSS
+==================== */
+        
+        section.service {
+            display: flex;
+            margin-top: 100px;
+            background-image: url(../img/background/service-bg.png);
+            background-repeat: no-repeat;
+        }
+        
+        .service .content {
+            margin-top: 64px;
+        }
+        
+        .service .content h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+            margin-bottom: 24px;
+        }
+        
+        .service .content p {
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--black-color-1);
+            margin-bottom: 84px;
+        }
+        
+        .card {
+            border: none;
+        }
+        
+        .card-service .card {
+            padding: 35px;
+            background: var(--white-color);
+            box-shadow: 0px 18px 40px rgba(76, 101, 234, 0.17);
+            border-radius: 7px;
+            margin-bottom: 22px;
+            transition: 0.4s;
+        }
+        
+        .card-service .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card-service .card img {
+            margin-bottom: 42px;
+        }
+        
+        .card-service .card a {
+            font-size: 24px;
+            line-height: 36px;
+            text-decoration: none;
+            color: var(--black-color-1);
+        }
+        /* ====================
+Work Section CSS
+==================== */
+        
+        section.work {
+            margin-top: 160px;
+        }
+        
+        .work .title h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+            margin-bottom: 24px;
+        }
+        
+        .work .title p {
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--black-color-1);
+        }
+        
+        .card-work {
+            margin-top: 154px;
+        }
+        
+        .card-work img {
+            transition: 0.4s;
+        }
+        
+        .card-work img:hover {
+            transform: scale(1.05);
+        }
+        
+        .work .box-bg {
+            height: 530px;
+        }
+        
+        .card-work .box {
+            height: 403px;
+            background: #EDF7FF;
+            border-radius: 27px;
+            padding: 60px 50px;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .card-work .box .content .subtitle {
+            padding: 0px 35px;
+        }
+        
+        .card-work .box h4 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: var(--black-color-1);
+            margin-bottom: 7px;
+        }
+        
+        .card-work .box p {
+            font-size: 14px;
+            line-height: 21px;
+            color: var(--black-color-2);
+            margin-bottom: 40px;
+        }
+        /* ====================
+Explore Section CSS
+==================== */
+        
+        section.explore {
+            margin-top: 200px;
+        }
+        
+        .explore .container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .explore h1 {
+            font-size: 64px;
+            line-height: 96px;
+            color: var(--black-color-1);
+            margin-top: 35px;
+        }
+        
+        .explore button {
+            margin-top: 36px;
+        }
+        /* ====================
+Happy Client Section CSS
+==================== */
+        
+        section.client {
+            margin-top: 200px;
+        }
+        
+        .client h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+            margin-bottom: 80px;
+        }
+        
+        .client-logo {
+            padding-right: 20px;
+        }
+        
+        .client-logo img {
+            height: 59px;
+            width: 59px !important;
+        }
+        
+        .client .client-logo label {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: var(--black-color-1);
+            margin-left: 12px;
+        }
+        /* ====================
+Testi Section CSS
+==================== */
+        
+        section.testimonial-section {
+            margin-top: 200px;
+        }
+        
+        section.testimonial-section h2 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+        }
+        /* ====================
+ContactUs Section CSS
+==================== */
+        
+        section.card-contact .box {
+            margin-top: 200px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 59px rgba(76, 101, 234, 0.13);
+            border-radius: 8px;
+            padding: 64px 82px;
+            background-image: url(../img/back-image-about-us.svg);
+            background-repeat: no-repeat;
+            position: relative;
+            background-position-x: 54rem;
+        }
+        
+        .card-contact h1 {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 72px;
+            color: var(--black-color-1);
+        }
+        
+        .card-contact p {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: var(--black-color-2);
+            margin-bottom: 30px;
+        }
+        /* ====================
+Footer Section CSS
+==================== */
+        
+        footer {
+            margin-top: 300px;
+            height: 100%;
+            background: #1B2A4E;
+            padding: 45px 0px;
+        }
+        
+        footer h4 {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            color: var(--white-color);
+            margin-top: 30px;
+        }
+        
+        footer p {
+            font-size: 16px;
+            line-height: 22px;
+            color: var(--white-color);
+            margin-top: 30px;
+        }
+        
+        footer .title {
+            margin-bottom: 34px;
+            margin-top: 0px;
+        }
+        
+        footer ul {
+            padding: 0px;
+        }
+        
+        footer li {
+            margin-bottom: 20px;
+        }
+        
+        footer li a {
+            font-size: 17px;
+            line-height: 25px;
+            color: #D1D1D1;
+            text-decoration: none;
+        }
+        /* ====================
+Mobile Service CSS
+==================== */
+        
+        section.hero-service {
+            background-image: url(../img/background/bg-mobile-service.png);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position-x: 18rem;
+            margin-top: 54px;
+        }
+        
+        .hero-service p {
+            font-size: 24px;
+            line-height: 36px;
+            color: var(--black-color-2);
+        }
+        
+        .hero-service .content {
+            margin-top: 70px;
+        }
+        
+        .hero-service h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+        }
+        
+        .hero-service span {
+            color: var(--primary-color);
+        }
+        
+        section.mobile-service {
+            background-image: url(../img/background/bg-mobile-service-2.png);
+            background-repeat: no-repeat;
+            background-position-x: 0rem;
+            margin-top: 200px;
+            display: flex;
+        }
+        
+        .mobile-service .container {
+            margin-top: 250px;
+        }
+        
+        .mobile-service p {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-1);
+        }
+        
+        .mobile-service h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+            margin-bottom: 100px;
+        }
+        
+        .mobile-service .label {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 36px;
+            text-transform: uppercase;
+            color: var(--black-color-1);
+            margin-bottom: 68px;
+        }
+        
+        section.amazing-work {
+            margin-top: 300px;
+        }
+        
+        .amazing-work p {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-1);
+        }
+        
+        .amazing-work h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+            margin-bottom: 100px;
+        }
+        
+        .amazing-work ul li {
+            margin-bottom: 30px;
+        }
+        
+        .amazing-work li p {
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--black-color-1);
+            margin-left: 44px;
+            margin-bottom: 0px;
+        }
+        
+        section.appointment {
+            margin-top: 243px;
+            margin-bottom: 356px;
+        }
+        
+        section.appointment .title h1 {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 72px;
+            color: var(--black-color-1);
+            margin-bottom: 75px;
+        }
+        
+        section.appointment .card-meeting {
+            height: 100%px;
+            background: #FFFFFF;
+            box-shadow: 0px 11px 50px rgba(76, 101, 234, 0.17);
+            border-radius: 7px;
+            padding: 50px;
+            margin-bottom: 30px;
+        }
+        
+        section.appointment .card-meeting h1 {
+            font-weight: bold;
+            font-size: 35px;
+            line-height: 52px;
+            color: var(--black-color-1);
+            margin-bottom: 8px;
+        }
+        
+        section.appointment .card-meeting label {
+            font-size: 30px;
+            line-height: 45px;
+            color: var(--black-color-1);
+            margin-bottom: 16px;
+        }
+        
+        section.appointment .card-meeting p {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--black-color-1);
+        }
+        /* ====================
+Portfolio CSS
+==================== */
+        
+        section.hero-portfolio {
+            margin-top: 100px;
+        }
+        
+        .hero-portfolio p {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-2);
+        }
+        
+        .hero-portfolio h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+        }
+        
+        .hero-portfolio span {
+            color: var(--primary-color);
+        }
+        
+        section.card-portfolio {
+            margin-top: 200px;
+        }
+        
+        section.card-portfolio img {
+            height: 355px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        
+        section.card-portfolio .card-body {
+            margin-bottom: 150px;
+        }
+        
+        section.card-portfolio h1 a {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 52px;
+            color: var(--black-color-1);
+            margin-top: 67px;
+            margin-bottom: 24px;
+        }
+        
+        section.card-portfolio p {
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--black-color-1);
+            margin-bottom: 40px;
+        }
+        
+        section.card-portfolio a {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-2);
+            text-decoration: var(--black-color-2);
+            margin-right: 60px;
+        }
+        
+        section.detail-portfolio {
+            margin-top: 100px;
+        }
+        
+        section.detail-portfolio .title h1 {
+            font-weight: bold;
+            font-size: 45px;
+            line-height: 67px;
+            color: var(--black-color-1);
+            margin-bottom: 18px;
+        }
+        
+        section.detail-portfolio .title p {
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--black-color-1);
+            margin-bottom: 86px;
+        }
+        
+        section.detail-portfolio img {
+            height: 752px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        
+        section.detail-portfolio .file-figma p {
+            font-size: 48px;
+            line-height: 72px;
+            color: var(--black-color-1);
+            margin-top: 110px;
+            margin-bottom: 65px;
+        }
+        /* ====================
+About CSS
+==================== */
+        
+        section.hero-about {
+            margin-top: 50px;
+            background-image: url(../img/background/about-bg.png);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position-x: 32rem;
+        }
+        
+        section.hero-about .col-md-5 {
+            margin-top: 130px;
+        }
+        
+        .hero-about p {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-2);
+        }
+        
+        .hero-about h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+        }
+        
+        section.about-service {
+            background-image: url(../img/background/bg-mobile-service-2.png);
+            background-repeat: no-repeat;
+            background-position-x: 0rem;
+            margin-top: 200px;
+            display: flex;
+        }
+        
+        .about-service .container {
+            margin-top: 180px;
+            margin-bottom: 100px;
+        }
+        
+        .about-service p {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-1);
+        }
+        
+        .about-service h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+            margin-bottom: 100px;
+        }
+        
+        .about-service .box {
+            margin-top: 100px;
+            padding: 62px 45px;
+            background: #FFFFFF;
+            box-shadow: 0px 21px 52px rgba(76, 101, 234, 0.13);
+            border-radius: 24px;
+        }
+        
+        section.house {
+            background-image: url(../img/background/about-bg-2.png);
+            background-repeat: no-repeat;
+            background-position-x: 58rem;
+            background-position-y: 42rem;
+        }
+        
+        section.house .container {
+            margin-top: 200px;
+        }
+        
+        section.house .title {
+            position: absolute;
+            width: 32%;
+            padding: 44px 100px;
+            background: #FFFFFF;
+            box-shadow: 0px 21px 52px rgba(76, 101, 234, 0.13);
+            border-radius: 5px;
+        }
+        
+        section.house h1 {
+            font-size: 54px;
+            line-height: 81px;
+            text-align: right;
+            color: var(--primary-color);
+        }
+        
+        section.house span {
+            font-weight: 600;
+        }
+        
+        section.house img {
+            margin-bottom: 500px;
+            margin-top: 100px;
+        }
+        /* ====================
+Career CSS
+==================== */
+        
+        section.hero-career {
+            margin-top: 74px;
+            background-image: url(../img/background/career-bg.png);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position-x: 43rem;
+        }
+        
+        section.hero-career .col-md-5 {
+            margin-top: 80px;
+        }
+        
+        .hero-career p {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-2);
+        }
+        
+        .hero-career h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+        }
+        
+        .card-career .card .card-body {
+            padding: 20px;
+            background: #FFFFFF;
+            box-shadow: 4px 0px 20px rgba(76, 101, 234, 0.12);
+            border-radius: 5.80795px;
+            margin-bottom: 19px;
+        }
+        
+        .card-career h5 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-1);
+            margin-bottom: 10px;
+        }
+        
+        .card-career p {
+            font-size: 14.9347px;
+            line-height: 29px;
+            color: var(--black-color-2);
+            margin-bottom: 13px;
+        }
+        
+        .card-career hr {
+            margin-bottom: 34px;
+        }
+        
+        .card-career a {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 14.9347px;
+            line-height: 22px;
+        }
+        
+        .card-career button {
+            margin-top: 131px;
+            font-weight: normal;
+        }
+        
+        .hero-career .rectangle {
+            width: 6px;
+            height: 26px;
+            /* Primary Color */
+            background: #4C65EA;
+        }
+        
+        .detail-career .container {
+            padding: 122px;
+        }
+        
+        .detail-career .container .box {
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 47px 36px;
+        }
+        
+        .detail-career .title h1 {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 54px;
+            color: var(--black-color-1);
+            margin-left: 22px;
+        }
+        
+        .detail-career .content {
+            padding: 0px 30px;
+        }
+        
+        .detail-career .content h5 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-1);
+            margin-top: 47px;
+            margin-bottom: 30px;
+        }
+        
+        .detail-career li {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-1);
+            margin-bottom: 27px;
+            list-style-type: disc;
+        }
+        
+        .detail-career p {
+            margin-left: 30px;
+        }
+        
+        .detail-career button {
+            margin-top: 47px;
+            font-weight: normal;
+        }
+        /* ====================
+Contact CSS
+==================== */
+        
+        section.hero-contact {
+            margin-top: 100px;
+        }
+        
+        section.hero-contact .col-md-5 {
+            margin-top: 10px;
+        }
+        
+        .hero-contact p {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-2);
+        }
+        
+        .hero-contact h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 108px;
+            color: var(--black-color-1);
+        }
+        
+        .feedback {
+            margin-top: 222px;
+        }
+        
+        .feedback h1 {
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 96px;
+            color: var(--black-color-1);
+        }
+        
+        .feedback p {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-1);
+        }
+        
+        .feedback .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .feedback .form-group label {
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--black-color-1);
+            margin-bottom: 14px;
+        }
+        
+        .form-group .form-control {
+            border: 1px solid #CFCFCF;
+            box-sizing: border-box;
+            border-radius: 8px;
+            padding: 19px 30px;
+            color: var(--black-color-1);
+            font-size: 18px;
+        }
+        
+        .form-group .form-control:focus {
+            border: 1px solid var(--primary-color);
+            box-shadow: none;
+        }
+        
+        .feedback .form-group input::placeholder {
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 27px;
+        }
+        
+        .feedback button {
+            padding: 14px 39px;
+            font-weight: normal;
+            margin-top: 47px;
+        }
+        /* ====================
+Blog CSS
+==================== */
+        
+        section.blog {
+            margin-top: 39px;
+        }
+        
+        .blog .card {
+            margin-bottom: 55px;
+        }
+        
+        .blog label {
+            position: absolute;
+            padding: 12px;
+            background: #FFFFFF;
+            border-radius: 7px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: var(--primary-color);
+            margin: 20px;
+            left: 0;
+            top: 212px;
+        }
+        
+        .blog h2 {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 37px;
+            color: var(--black-color-1);
+            margin-bottom: 30px;
+        }
+        
+        .blog .col-md-8 img {
+            height: 294px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        
+        .blog .col-md-8 h1 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+            margin-bottom: 17px;
+        }
+        
+        .blog .col-md-8 p {
+            font-size: 15px;
+            line-height: 22px;
+        }
+        
+        .blog .col-md-4 img {
+            height: 294px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        
+        .blog .col-md-4 h1 {
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 34px;
+            margin-bottom: 17px;
+        }
+        
+        .blog .col-md-4 p {
+            font-size: 15px;
+            line-height: 22px;
+        }
+        
+        .blog .card-body a {
+            color: var(--black-color-1);
+            text-decoration: none;
+        }
+        
+        section.last-article {
+            margin-top: 54px;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .pagination .page-item .page-link {
+            border: none;
+            background-color: var(--background-color);
+        }
+        
+        .pagination .page-item .page-link:hover {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+        
+        .pagination .page-item .page-link:focus {
+            box-shadow: none;
+            background-color: var(--background-color);
+            color: var(--black-color-1);
+        }
+        
+        .pagination .page-item .page-link:focus:hover {
+            color: var(--white-color);
+            background-color: var(--primary-color);
+        }
+        
+        .pagination .page-item .page-link.active {
+            color: var(--black-color-1);
+        }
+        
+        .pagination .page-item .page-link.active:hover {
+            color: var(--primary-color);
+        }
+        
+        section.blog-detail {
+            margin-top: 50px;
+        }
+        
+        .blog-detail p {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            color: var(--black-color-1);
+            margin-bottom: 15px;
+        }
+        
+        .blog-detail h1 {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 72px;
+            margin-bottom: 15px;
+            color: var(--black-color-1);
+        }
+        
+        .blog-detail .image-detail img {
+            height: 417px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        
+        .blog-detail p.name {
+            font-size: 13px;
+            line-height: 19px;
+            color: var(--black-color-1);
+        }
+        
+        .blog-detail p.time {
+            font-size: 13px;
+            line-height: 19px;
+            color: var(--black-color-2);
+        }
+        
+        .detail-blog .container {
+            padding: 122px;
+        }
+        
+        .detail-blog .container .box {
+            border-radius: 12px;
+            padding: 47px 36px;
+        }
+        
+        .detail-blog .title h1 {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 54px;
+            color: var(--black-color-1);
+            margin-left: 22px;
+        }
+        
+        .detail-blog .content {
+            padding: 0px 30px;
+        }
+        
+        .detail-blog p {
+            font-size: 18px;
+            line-height: 27px;
+            color: var(--black-color-1);
+        }
+        
+        .detail-blog span {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 54px;
+        }
+        
+        .detail-blog button {
+            margin-top: 47px;
+            font-weight: normal;
+        }
+        
+        .detail-blog li a {
+            margin-right: 20px;
+            font-size: 32px;
+            color: var(--black-color-2);
+        }
+        
+        .detail-blog .share {
+            margin-top: 127px;
+        }
+        
+        .detail-blog .profile {
+            margin-top: 169px;
+        }
+        
+        .detail-blog .profile h4 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 36px;
+            color: var(--black-color-1);
+            margin-bottom: 16px;
+        }
+        
+        .detail-blog .profile p {
+            font-size: 14px;
+            line-height: 21px;
+            color: var(--black-color-1);
+        }
+        
+        .detail-blog .similiar-article .card {
+            margin-bottom: 30px;
+        }
+        
+        .detail-blog .similiar-article a {
+            color: var(--black-color-1);
+            text-decoration: none;
+        }
+        
+        .detail-blog .similiar-article h1 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+            margin-top: 178px;
+            margin-bottom: 74px;
+        }
+        
+        .detail-blog .similiar-article label {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            color: var(--black-color-2);
+            margin-bottom: 13px;
+        }
+        
+        .detail-blog .similiar-article h2 {
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 28px;
+        }
+        /* ====================
+404 CSS
+==================== */
+        
+        section.not-found .container {
+            padding: 47px 0px;
+        }
+        
+        section.not-found .content h2 {
+            font-weight: 600;
+            font-size: 36px;
+            color: var(--black-color-1);
+        }
+        
+        section.not-found .content p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #C4C4C4;
+            margin-bottom: 47px;
+        }
+        
+        section.not-found .content a {
+            text-decoration: none;
+            font-weight: 400;
+        }
+        
+        @keyframes bgshadow {
+            0% {
+                box-shadow: inset -160px 160px 0px 5px rgba(0, 0, 0, 0.4);
+            }
+            45% {
+                box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+            }
+            55% {
+                box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+            }
+            100% {
+                box-shadow: inset 160px -160px 0px 5px rgba(0, 0, 0, 0.4);
+            }
+        }
+        /* --------------------------------------------------
+ Custom Scrollbar
+  ----------------------------------------------------*/
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 7px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: rgb(207, 206, 206);
+        }
+        /*------------------------ 
+Scroll out animate
+-----------------------*/
+        
+        [data-scroll] {
+            transition: all 2s;
+        }
+        
+        [data-scroll="in"] {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        [data-scroll="out"] {
+            opacity: 0;
+            transform: translateX(0px);
+        }
+        /*------------------------ 
+ Responsive
+------------------------*/
+        
+        @media(max-width: 767px) {
+            /* ====================
+Index CSS
+==================== */
+            .navbar button {
+                margin-bottom: 14px;
+            }
+            section.hero {
+                background-image: none;
+            }
+            .hero .container .content {
+                margin-top: 170px;
+            }
+            .hero .container .content h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            section.service {
+                background-image: none;
+                margin-top: 0px;
+            }
+            .service .content {
+                margin-top: 0px;
+            }
+            .service .content h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            .card-service {
+                padding: 0px 8px;
+            }
+            section.work {
+                margin-top: 150px;
+            }
+            .work .title h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            .card-work .box {
+                padding: 45px 20px;
+            }
+            .card-work .box .content .subtitle {
+                padding: 0px 19px;
+            }
+            .explore h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            .client h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            section.testimonial-section h2 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            section.card-contact .box {
+                padding: 44px 42px;
+            }
+            .card-contact h1 {
+                font-size: 28px;
+                line-height: 42px;
+            }
+            .card-contact p {
+                font-size: 18px;
+                line-height: 28px;
+            }
+            section.hero-service {
+                background-image: none;
+                height: 70vh;
+                margin-top: 0px;
+            }
+            .hero-service p {
+                font-size: 24px;
+                line-height: 36px;
+            }
+            .hero-service .content {
+                margin-top: 30px;
+            }
+            .hero-service h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            section.mobile-service {
+                background-image: none;
+                margin-top: 0px;
+            }
+            .mobile-service .container {
+                margin-top: 0px;
+            }
+            .mobile-service .label {
+                font-size: 24px;
+            }
+            .mobile-service p {
+                font-size: 18px;
+                line-height: 27px;
+                color: var(--black-color-1);
+            }
+            .mobile-service h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            section.amazing-work {
+                margin-top: 100px;
+            }
+            .amazing-work h1 {
+                font-size: 42px;
+                line-height: 70px;
+                margin-bottom: 70px;
+            }
+            section.appointment {
+                margin-top: 170px;
+                margin-bottom: 200px;
+            }
+            section.appointment .title h1 {
+                font-weight: 600;
+                font-size: 34px;
+            }
+            section.appointment .card-meeting {
+                padding: 50px;
+            }
+            section.appointment .card-meeting h1 {
+                font-size: 24px;
+                margin-bottom: 0px;
+            }
+            section.appointment .card-meeting label {
+                font-size: 18px;
+                margin-bottom: 0px;
+            }
+            section.appointment .card-meeting p {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 0px;
+            }
+            .blog .col-md-8 h1 {
+                font-size: 23px;
+                line-height: 34px;
+            }
+            .blog-detail h1 {
+                font-size: 24px;
+                line-height: 34px;
+            }
+            .detail-blog p {
+                font-size: 14px;
+                line-height: 23px;
+            }
+            .detail-blog span {
+                font-size: 24px;
+                line-height: 34px;
+            }
+            .blog-detail .image-detail img {
+                margin-top: 44px;
+            }
+            .detail-blog .container {
+                padding: 0px;
+            }
+            section.detail-career .container {
+                padding: 0px;
+            }
+            .detail-blog .similiar-article h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            section.hero-portfolio {
+                margin-top: 50px;
+            }
+            .hero-portfolio h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            .hero-portfolio p {
+                font-size: 16px;
+                line-height: 27px;
+                margin-bottom: 44px;
+            }
+            section.card-portfolio h1 a {
+                font-size: 24px;
+                line-height: 47px;
+                color: var(--black-color-1);
+                margin-top: 24px;
+                margin-bottom: 14px;
+            }
+            section.card-portfolio p {
+                font-size: 16px;
+                line-height: 30px;
+                color: var(--black-color-1);
+                margin-bottom: 40px;
+            }
+            section.card-portfolio .card-body {
+                margin-bottom: 47px;
+            }
+            section.detail-portfolio {
+                margin-top: 50px;
+            }
+            section.detail-portfolio .title h1 {
+                font-size: 42px;
+                line-height: 67px;
+                margin-bottom: 18px;
+            }
+            section.detail-portfolio .title p {
+                font-size: 16px;
+                line-height: 30px;
+                color: var(--black-color-1);
+                margin-bottom: 86px;
+            }
+            section.detail-portfolio .file-figma p {
+                font-size: 28px;
+                margin-top: 110px;
+                margin-bottom: 24px;
+            }
+            section.hero-career {
+                margin-top: 50px;
+                background-image: none;
+                height: 50vh;
+            }
+            section.hero-career .col-md-5 {
+                margin-top: 0px;
+            }
+            .hero-career p {
+                font-size: 16px;
+                line-height: 27px;
+            }
+            .hero-career h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            section.hero-about {
+                margin-top: 50px;
+                background-image: none;
+                height: 25vh;
+            }
+            section.hero-about .col-md-5 {
+                margin-top: 0px;
+            }
+            .hero-about p {
+                font-size: 16px;
+                line-height: 27px;
+            }
+            .hero-about h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            section.about-service {
+                background-image: none;
+                margin-top: 0px;
+            }
+            .about-service h1 {
+                font-size: 42px;
+                line-height: 70px;
+                margin-bottom: 0px;
+            }
+            section.house {
+                background-image: none;
+            }
+            section.house .container {
+                margin-top: 0px;
+            }
+            section.house .title {
+                position: inherit;
+                width: 55%;
+                padding: 24px 50px;
+            }
+            section.house h1 {
+                font-size: 24px;
+                line-height: 31px;
+                text-align: right;
+                color: var(--primary-color);
+            }
+            section.house img {
+                margin-bottom: 0px;
+                margin-top: 30px;
+            }
+            section.hero-contact {
+                margin-top: 50px;
+            }
+            .hero-contact p {
+                font-size: 16px;
+                line-height: 27px;
+                color: var(--black-color-2);
+            }
+            .hero-contact h1 {
+                font-size: 42px;
+                line-height: 70px;
+            }
+            .hero-contact img {
+                margin-top: 30px;
+            }
+            .feedback {
+                margin-top: 122px;
+            }
+            .feedback h1 {
+                font-size: 38px;
+                line-height: 70px;
+                margin-bottom: 47px;
+            }
+            .feedback .form-group input {
+                margin-bottom: 30px;
+            }
+            .form-group .form-control {
+                border-radius: 8px;
+                padding: 19px 24px;
+                font-size: 14px;
+            }
+        }
+        
+        @media(max-width: 991px) {}
